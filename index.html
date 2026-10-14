@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090914">
+<title>HanzzTris Allgame</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#090914;color:#fff;font-family:Arial,sans-serif}
+header{padding:22px 16px;background:#121225;border-bottom:1px solid #30234d}
+.brand{font-size:25px;font-weight:900;color:#b99aff}
+.brand span{color:white}
+header p{color:#aaa;font-size:13px;margin-bottom:0}
+main{max-width:850px;margin:auto;padding:18px}
+.hero{padding:26px 20px;border-radius:18px;background:linear-gradient(135deg,#32156b,#11112a);margin-bottom:24px}
+.hero h1{font-size:29px;margin:0 0 10px}
+.hero p{color:#ddd;line-height:1.6}
+.tag{display:inline-block;background:#25183e;color:#d7bdff;border:1px solid #6840a1;padding:7px 10px;border-radius:20px;font-size:12px}
+h2{font-size:20px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:13px}
+.card{background:#151525;border:1px solid #302747;border-radius:14px;overflow:hidden}
+.art{height:105px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#432080,#15152c);font-size:43px}
+.info{padding:13px}
+.info h3{font-size:15px;margin:0 0 9px}
+.info p{font-size:12px;color:#bbb;min-height:30px}
+.price{font-weight:bold;color:#c7a4ff;font-size:17px;margin:12px 0}
+button,.buy{border:0;background:#8b5cf6;color:white;padding:11px;border-radius:9px;font-weight:bold;cursor:pointer;text-decoration:none;display:block;text-align:center;width:100%;font-size:13px}
+button:active,.buy:active{opacity:.8}
+.notice{margin-top:22px;padding:15px;background:#171726;border-radius:12px;color:#ccc;font-size:13px;line-height:1.7}
+.contact{margin-top:15px}
+footer{text-align:center;color:#777;padding:28px 12px;font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">HANZZTRIS <span>ALLGAME</span></div>
+  <p>Marketplace akun Free Fire • Aman & transparan</p>
+</header>
+<main>
+  <section class="hero">
+    <span class="tag">TOKO AKUN FREE FIRE</span>
+    <h1>Temukan akun FF impianmu 🎮</h1>
+    <p>Pilih akun yang kamu suka, hubungi admin untuk cek stok dan harga terbaru.</p>
+    <a class="buy" href="https://wa.me/628135650762?text=Halo%20Admin%20HanzzTris%2C%20saya%20mau%20lihat%20stok%20akun%20FF." target="_blank" rel="noopener">Chat Admin WhatsApp</a>
+  </section>
+
+  <h2>🔥 Katalog Akun</h2>
+  <p style="color:#aaa;font-size:13px">Contoh tampilan katalog. Harga dan stok harus dikonfirmasi admin.</p>
+  <section class="products">
+    <article class="card">
+      <div class="art">🎯</div>
+      <div class="info">
+        <h3>Akun FF Basic</h3>
+        <p>Detail dan stok: tanya admin</p>
+        <div class="price">Cek harga</div>
+        <button onclick="beli('Akun FF Basic')">Tanya akun</button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="art">💎</div>
+      <div class="info">
+        <h3>Akun FF Sultan</h3>
+        <p>Detail dan stok: tanya admin</p>
+        <div class="price">Cek harga</div>
+        <button onclick="beli('Akun FF Sultan')">Tanya akun</button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="art">👑</div>
+      <div class="info">
+        <h3>Akun FF Koleksi</h3>
+        <p>Detail dan stok: tanya admin</p>
+        <div class="price">Cek harga</div>
+        <button onclick="beli('Akun FF Koleksi')">Tanya akun</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="notice">
+    <strong>📌 Cara pembelian</strong><br>
+    1. Pilih akun lalu chat admin.<br>
+    2. Konfirmasi stok, harga, dan metode pembayaran.<br>
+    3. Jangan bayar sebelum detail transaksi dan penerima pembayaran dikonfirmasi.<br>
+    4. Admin memeriksa pembayaran yang benar-benar masuk sebelum menyerahkan akun.<br><br>
+    <strong>Catatan:</strong> Website ini masih tahap awal. Belum ada login, pembayaran otomatis, atau verifikasi pesanan.
+  </section>
+  <a class="buy contact" href="https://wa.me/628135650762?text=Halo%20Admin%20HanzzTris" target="_blank" rel="noopener">Hubungi Admin: 08135650762</a>
+</main>
+<footer>© 2026 HanzzTris Allgame • Kelola transaksi dengan jujur dan aman.</footer>
+<script>
+function beli(nama){
+  const pesan="Halo Admin HanzzTris, saya tertarik dengan "+nama+". Apakah stok dan harganya tersedia?";
+  window.open("https://wa.me/628135650762?text="+encodeURIComponent(pesan),"_blank");
+}
+</script>
+</body>
+</html>
